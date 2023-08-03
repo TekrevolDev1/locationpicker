@@ -146,7 +146,7 @@ class PlacePickerState extends State<PlacePicker> {
           key: this.appBarKey,
           title: SearchInput(searchPlace),
           centerTitle: true,
-          automaticallyImplyLeading: false,
+          //automaticallyImplyLeading: false,
         ),
         body: Column(
           children: <Widget>[
