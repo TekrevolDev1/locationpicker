@@ -184,7 +184,8 @@ class PlacePickerState extends State<PlacePicker> {
                   children: <Widget>[
                     SelectPlaceAction(getLocationName(), () {
                       if (Platform.isAndroid) {
-                        _delayedPop();
+                        Navigator.of(context).pop(this.locationResult);
+                        //_delayedPop();
                       } else {
                         Navigator.of(context).pop(this.locationResult);
                       }
